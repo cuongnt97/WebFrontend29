@@ -1,0 +1,32 @@
+.text {
+  color: red;
+  background-color: beige;
+  font-size: 20pt;
+  text-decoration: none;
+}
+.link-inner {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+.font-big {
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.text-align-test {
+  text-align: center;
+}
+.text-decoration-test {
+  text-decoration: underline blue 2px;
+}
+
+code {
+  white-space: pre;
+  text-align: left;
+}
+
+.shadow {
+  text-shadow: 5px 5px 5px red;
+  
+}
