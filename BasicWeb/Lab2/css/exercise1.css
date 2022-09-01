@@ -1,0 +1,49 @@
+.div-total {
+  background-color: #36c736;
+  font-family: Verdana;
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  max-width: 500px;
+  margin: 0 auto 50px auto;
+  padding: 30px;
+}
+
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+  border: 1px solid;
+  border-radius: 10px; /* Điều chỉnh độ cong viền */
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+.submit-button {
+  background-color: #36c736;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 8px;
+}

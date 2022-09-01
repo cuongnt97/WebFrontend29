@@ -1,0 +1,55 @@
+.body{
+    width: 50%;
+    margin: auto;
+}
+form {
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+}
+.form-control{
+    display: block;
+    margin: 20px auto;
+}
+input[type="text"],
+input[type="password"] {
+  padding: 10px 15px;
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.button-form{
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cancel-button{
+    width: auto;
+    padding: 10px 20px;
+    background-color: #f82626;
+    border: none;
+    border-radius: 5px;
+}
+
+span{
+    float: right;
+    padding-top: 20px;
+}
+
+.avatar{
+    width: 40%;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}

@@ -28,5 +28,22 @@ code {
 
 .shadow {
   text-shadow: 5px 5px 5px red;
-  
+}
+
+.link-button {
+  background-color: #f3f30e;
+  width: 100px 50px;
+  border: 1px;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.div-link {
+  margin-bottom: 30px;
 }
