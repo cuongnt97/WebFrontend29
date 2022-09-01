@@ -14,7 +14,7 @@ input[type="text"],
 input[type="password"] {
   padding: 10px 15px;
   width: 100%;
-  margin: 8px 0;
+  margin: 16px 0 16px;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -26,7 +26,7 @@ input[type="password"] {
     background-color: green;
     color: white;
     padding: 15px 20px;
-    margin: 10px 0;
+    margin: 8px 0 16px;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -34,16 +34,17 @@ input[type="password"] {
 }
 
 .cancel-button{
-    width: auto;
+    width: 150px;
     padding: 10px 20px;
     background-color: #f82626;
     border: none;
     border-radius: 5px;
+    margin: 8px;
 }
 
 span{
     float: right;
-    padding-top: 20px;
+    padding: 18px 8px;
 }
 
 .avatar{
