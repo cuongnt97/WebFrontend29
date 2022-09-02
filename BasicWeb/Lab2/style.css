@@ -32,10 +32,10 @@ code {
 
 .link-button {
   background-color: #f3f30e;
-  width: 100px 50px;
+  width: 100px;
   border: 1px;
   border-radius: 3px;
-  padding: 5px;
+  padding: 8px;
   margin-top: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
