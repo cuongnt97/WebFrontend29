@@ -8,88 +8,8 @@
     <title>Excercise2 - Lab2</title>
     <link rel="shortcut icon" href="https://trainghiemso.vn/wp-content/uploads/2020/05/%C3%B4m-ti%E1%BB%81n.png"
         type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="/BasicWeb/Lab2/css/exercise2.css"> -->
-    <!-- <link rel="stylesheet" href="/BasicWeb/Lab2/style.css"> -->
-
-    <style>
-        .link-button {
-            background-color: #f3f30e;
-            width: 100px;
-            border: 1px;
-            border-radius: 3px;
-            padding: 8px;
-            margin-top: 10px;
-            font-family: Georgia, "Times New Roman", Times, serif;
-            font-weight: bold;
-            font-size: 15px;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .div-link {
-            margin-bottom: 30px;
-        }
-
-        .body {
-            width: 50%;
-            margin: auto;
-        }
-
-        form {
-            border: 1px solid #f1f1f1;
-            padding: 10px;
-        }
-
-        .form-control {
-            display: block;
-            margin: 20px auto;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            padding: 10px 15px;
-            width: 100%;
-            margin: 16px 0 16px;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 10px;
-            font-size: 14px;
-        }
-
-        .button-form {
-            background-color: green;
-            color: white;
-            padding: 15px 20px;
-            margin: 8px 0 16px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .cancel-button {
-            width: 150px;
-            padding: 10px 20px;
-            background-color: #f82626;
-            border: none;
-            border-radius: 5px;
-            margin: 8px;
-        }
-
-        span {
-            float: right;
-            padding: 18px 8px;
-        }
-
-        .avatar {
-            width: 40%;
-            border-radius: 50%;
-            text-align: center;
-            margin: 20px auto;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/exercise2.css" type="text/css">
+    <link rel="stylesheet" href="../style.css">
 
 </head>
 
@@ -102,18 +22,18 @@
 
     <div class="body">
         <h2>Login Form</h2>
-        <form action="">
+        <form action="submit">
             <img class="avatar" src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar Sample">
 
             <div class="form-control">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" name="uname" id="" placeholder="Enter Username" required>
-                <label for="password"><b>Password</b></label>
-                <input type="password" name="password" id="" placeholder="Enter Password" required>
+                <label><b>Username</b></label>
+                <input type="text" name="username" placeholder="Enter Username" required />
+                <label><b>Password</b></label>
+                <input type="password" name="password" placeholder="Enter Password" required />
 
                 <button type="submit" class="button-form">Login</button>
-                <label for="">
-                    <input type="checkbox" name="remember" id="" checked="checked">Remember me
+                <label>
+                    <input type="checkbox" name="remember" checked="checked" />Remember me
                 </label>
             </div>
 
