@@ -8,79 +8,9 @@
     <title>Excercise1 - Lab2</title>
     <link rel="shortcut icon" href="https://trainghiemso.vn/wp-content/uploads/2020/05/%C3%B4m-ti%E1%BB%81n.png"
         type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="/BasicWeb/Lab2/css/exercise1.css" type="text/css"> -->
-    <!-- <link rel="stylesheet" href="/BasicWeb/Lab2/style.css" type="text/css"> -->
+    <link rel="stylesheet" href="../Lab2/css/exercise1.css" type="text/css">
+    <link rel="stylesheet" href="../Lab2/style.css" type="text/css">
 
-    <style>
-        .link-button {
-            background-color: #f3f30e;
-            width: 100px;
-            border: 1px;
-            border-radius: 3px;
-            padding: 8px;
-            margin-top: 10px;
-            font-family: Georgia, "Times New Roman", Times, serif;
-            font-weight: bold;
-            font-size: 15px;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .div-link {
-            margin-bottom: 30px;
-        }
-
-        .div-total {
-            background-color: #36c736;
-            font-family: Verdana;
-            text-align: center;
-        }
-
-        form {
-            background-color: white;
-            max-width: 500px;
-            margin: 0 auto 50px auto;
-            padding: 30px;
-        }
-
-        .form-control {
-            text-align: left;
-            margin-bottom: 25px;
-        }
-
-        .form-control label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .form-control input,
-        .form-control select,
-        .form-control textarea {
-            border: 1px solid;
-            border-radius: 10px;
-            /* Điều chỉnh độ cong viền */
-            padding: 10px;
-            display: block;
-            width: 95%;
-        }
-
-        .form-control input[type="radio"],
-        .form-control input[type="checkbox"] {
-            display: inline-block;
-            width: auto;
-        }
-
-        .submit-button {
-            background-color: #36c736;
-            border: none;
-            border-radius: 5px;
-            font-size: 20px;
-            width: 100%;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            padding: 8px;
-        }
-    </style>
 </head>
 
 <body>
@@ -136,14 +66,15 @@
                     to a friend?
                 </label>
                 <!-- Input Type Radio Button -->
-                <label for="recommed-1">
-                    <input type="radio" id="recommed-1" name="recommed">Yes</input>
+                
+                <label for="recommend-1">
+                    <input type="radio" id="recommend-1" name="recommend" />Yes
                 </label>
-                <label for="recommed-2">
-                    <input type="radio" id="recommed-2" name="recommed">No</input>
+                <label for="recommend-2">
+                    <input type="radio" id="recommend-2" name="recommend" />No
                 </label>
-                <label for="recommed-3">
-                    <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+                <label for="recommend-3">
+                    <input type="radio" id="recommend-3" name="recommend" />Maybe
                 </label>
             </div>
             <div class="form-control">
@@ -151,33 +82,33 @@
                     <small>(Check all that apply)</small>
                 </label>
                 <!-- Input Type Checkbox -->
-                <label for="inp-1">
-                    <input type="checkbox" name="inp">C</input></label>
-                <label for="inp-2">
-                    <input type="checkbox" name="inp">C++</input></label>
-                <label for="inp-3">
-                    <input type="checkbox" name="inp">C#</input></label>
-                <label for="inp-4">
-                    <input type="checkbox" name="inp">Java</input></label>
-                <label for="inp-5">
-                    <input type="checkbox" name="inp">Python</input></label>
-                <label for="inp-6">
-                    <input type="checkbox" name="inp">JavaScript</input></label>
-                <label for="inp-7">
-                    <input type="checkbox" name="inp">React</input></label>
-                <label for="inp-7">
-                    <input type="checkbox" name="inp">Angular</input></label>
-                <label for="inp-7">
-                    <input type="checkbox" name="inp">Django</input></label>
-                <label for="inp-7">
-                    <input type="checkbox" name="inp">Spring</input></label>
+                <label>
+                    <input type="checkbox" name="inp" />C</label>
+                <label>
+                    <input type="checkbox" name="inp" />C++</label>
+                <label>
+                    <input type="checkbox" name="inp" />C#</label>
+                <label>
+                    <input type="checkbox" name="inp" />Java</label>
+                <label>
+                    <input type="checkbox" name="inp" />Python</label>
+                <label>
+                    <input type="checkbox" name="inp" />JavaScript</label>
+                <label>
+                    <input type="checkbox" name="inp" />React</label>
+                <label>
+                    <input type="checkbox" name="inp" />Angular</label>
+                <label>
+                    <input type="checkbox" name="inp" />Django</label>
+                <label>
+                    <input type="checkbox" name="inp" />Spring</label>
             </div>
             <div class="form-control">
-                <label for="comment">
+                <label>
                     Any comments or suggestions
                 </label>
                 <!-- multi-line text input control -->
-                <textarea name="comment" id="comment" placeholder="Enter your comment here">
+                <textarea name="comment" placeholder="Enter your comment here">
                 </textarea>
             </div>
             <!-- Multi-line Text Input Control -->
