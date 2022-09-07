@@ -58,6 +58,12 @@ body {
   line-height: 32px;
   padding-bottom: 8px;
   color: #4d4d4d;
+  cursor: pointer;
+  
+}
+.class-title:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .time-table {
@@ -77,5 +83,9 @@ body {
   margin-top: 8px;
   border-top: #bfbebe 1px solid;
   padding: 7px 0 5px;
+}
+.register a{
   color: #3c78e8;
+  text-decoration: none;
+  cursor: pointer;
 }
