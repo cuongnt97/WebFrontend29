@@ -18,7 +18,14 @@ img {
   max-width: 100%;
   vertical-align: middle;
   overflow: hidden;
+  filter: brightness(80%);
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .tray {
   display: flex;
   width: 1320px;
@@ -29,8 +36,8 @@ img {
 }
 
 .tray-title {
-  font-size: 20px;
-  margin-bottom: 16px;
+  font-size: 24px;
+  margin: 20px 0 10px;
 }
 
 .tray-list {
@@ -39,6 +46,16 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
+}
+
+.tray-small {
+  position: relative;
+  width: 210px;
+}
+
+.tray-big {
+  width: 320px;
+  position: relative;
 }
 
 .episode-info {
@@ -54,6 +71,7 @@ img {
   flex-direction: row;
   gap: 10px;
 }
+
 .new-img {
   width: 150px;
   object-fit: cover;
@@ -65,102 +83,144 @@ img {
   font-size: 14px;
 }
 
-a {
-  text-decoration: none;
-  color: blue;
+.description {
+  width: 100%;
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  color: white;
+  padding: 0 16px 0 0;
 }
 
-.tray-license,
-.tray-manga,
-.tray-anime{
-  width: 210px;
-}
-
-.episode-description ,
-.license-description,
-.cartoon-description,
-.manga-title,
-.anime-description,
-.today-description,
-.ranking-description,
-.all-description{
-  padding: 8px;
-}
-
-.episode-title,
-.license-title,
-.anime-title,
-.cartoon-title,
-.today-title,
-.order-title,
-.all-title{
+.title {
   font-size: 16px;
   padding: 8px 0;
   text-overflow: ellipsis;
 }
 
-.license-view,
-.anime-view,
-.cartoon-view,
-.today-view,
-.all-view{
+.view {
   font-size: 12px;
 }
 
-.tray-episode,
-.tray-cartoon,
-.tray-today,
-.tray-collection,
-.tray-all{
-  width: 320px;
+.tray-new a{
+  display: flex;
+  gap: 10px;
 }
-
-.cartoon-img img{
+.cartoon-img img {
   border-radius: 40px 40px 8px 8px;
 }
 
-.manga-img img{
+.manga-img img {
   border-radius: 8px;
 }
 
-.chapter{
-  background:#00000080 ;
+.chapter {
+  position: relative;
+  left: 8px;
+  top: 32px;
+  background: #00000080;
   border: 1px solid;
   border-radius: 3px;
   padding: 0 5px;
   font-size: 14px;
-  color: white;
+  color: black;
   width: 85px;
+  text-align: center;
+  /* display: block; */
 }
 
-.today-img{
+.today-img {
   overflow: hidden;
   height: 180px;
 }
 
-.ranking-title{
+.ranking-title {
   font-size: 14px;
 }
 
-.ranking-img{
+.ranking-img {
   width: 210px;
 }
 
-.ranking-num{
-  font-size: 40px;
-  text-align: right;
+.ranking-description{
+  color: white;
+  font-size: 14px;
+}
+.ranking-title{
+  position: absolute;
+  top: 8px !important;
+  left: 8px;
 }
 
-.all-upcoming{
+.ranking-num {
+  font-size: 40px;
+  text-align: right;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+
+.all-upcoming {
+  position: absolute;
   font-size: 14px;
-    height: 70px;
-    left: 10px;
-    padding-top: 16px;
-    top: 10px;
-    width: 70px;
-    border-radius: 50%;
-    background-color: #d80f1699;
-    text-align: center;
-    color: #eee;
-    font-weight: 600;;
+  height: 70px;
+  left: 10px;
+  padding-top: 16px;
+  top: 10px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #d80f1699;
+  text-align: center;
+  color: #eee;
+  font-weight: 600;
+}
+
+.play-btn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 36px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 12px;
+  padding-left: 8px;
+  display: none;
+  color: white;
+  box-shadow: 0 0 4px 2px ;
+  background-blend-mode: darken;
+}
+a:hover .all-upcoming{
+  display: none;
+}
+a:hover img{
+  transform: scale(1.1);
+  
+}
+a:hover .play-btn{
+  display: block;
+}
+
+a:hover .license-img img,
+a:hover .collection-img img,
+a:hover .anime-img img{
+  transform: none !important;
+}
+
+a:hover .new-img img,
+a:hover .manga-img img{
+  filter: blur(0.5px) !important;
+  transform: none !important;
+  filter: brightness(90%) !important;
+}
+.more{
+  text-align: center;
+  margin: 12px auto;
+  border-radius: 4px;
+  background-color: rgb(246, 73, 73);
+  width: 100px;
+  padding: 4px;
+  color: #eee !important;
 }
