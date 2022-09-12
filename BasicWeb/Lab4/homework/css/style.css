@@ -16,7 +16,7 @@ img {
   max-width: 100%;
   vertical-align: middle;
   overflow: hidden;
-  filter: brightness(80%);
+  filter: brightness(90%);
 }
 
 a {
@@ -211,7 +211,7 @@ a:hover .new-img img,
 a:hover .manga-img img{
   filter: blur(0.5px) !important;
   transform: none !important;
-  filter: brightness(90%) !important;
+  filter: brightness(100%) !important;
 }
 .more{
   text-align: center;
