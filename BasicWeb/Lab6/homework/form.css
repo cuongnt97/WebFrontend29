@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #385898;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  width: 400px;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.justify-between {
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.gender-selection {
+  width: 100%;
+}
+
+/* Modal */
+.modal {
+  padding: 10px 16px;
+  border-right: 1px solid #e6e8eb;
+  border-left: 1px solid #e6e8eb;
+
+}
+.modal-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.modal-meta {
+  font-size: 15px;
+  line-height: 24px;
+  color: #606770;
+}
+.cancel-btn {
+  border: none;
+  background-color: none;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Form */
+form {
+  border: 1px solid #e6e8eb;
+  padding: 16px;
+  box-shadow: 0px 4px 4px 0 rgb(208, 208, 208);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.input-text {
+  border: 1px solid #ccd0d5;
+  margin-right: auto;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 11px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f5f6f7;
+}
+
+.form-title {
+  color: #606770;
+  font-size: 12px;
+  padding-bottom: 2px;
+}
+
+.email-mobile,
+.password,
+.birthday {
+  width: 368px;
+}
+
+.gender-radio,
+.date {
+  width: 116px;
+  height: 36px;
+  font-size: 15px;
+  vertical-align: middle;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+}
+input[type="radio"],
+label {
+  margin: 4px 8px;
+  padding: 4px 0;
+}
+
+.date {
+  padding: 4px;
+}
+
+.meta-info {
+  color: #777777;
+  font-size: 11px;
+}
+
+.submit-btn {
+  background-color: #05ab29;
+  border: none;
+  height: 36px;
+  width: 194px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border-radius: 8px;
+}
