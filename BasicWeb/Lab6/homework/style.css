@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  background-color: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.bd-width {
+  width: 1188px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.left-100 {
+  left: 100%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.bgc-default {
+  background-color: #f5f5f5;
+}
+
+.bgc-white {
+  background-color: white;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+/* Link bar */
+
+.link-bar {
+  line-height: 1.15;
+}
+
+.link {
+  text-transform: uppercase;
+  color: #9e9e9e;
+  font-size: 12px;
+  padding: 0 17px;
+  text-align: right;
+}
+
+.link a {
+  background-color: none;
+}
+
+.special-bar {
+  color: #0f1568;
+}
+
+.link:hover {
+  color: #f36d00 !important;
+}
+
+.logo-thumbnail {
+  width: 200px;
+}
+
+.logo-thumbnail img {
+  width: 127px;
+}
+
+/* Vung logo va tim kiem */
+
+.logo-bar {
+  padding-top: 11px;
+  flex-direction: row;
+  margin-bottom: 32px;
+}
+
+.advertise {
+  width: 188px;
+}
+
+.search-form {
+  flex-direction: row;
+  width: 688px;
+  height: 45px;
+}
+.search-input {
+  width: 650px !important;
+  padding: 13px 19px;
+  background-color: #eff0f5;
+  border: none;
+  font-size: 14px;
+  color: #212121;
+  z-index: -1;
+}
+
+.search-btn {
+  width: 45px;
+  height: 45px;
+  background-color: #f36d00;
+  border: none;
+  color: white;
+  right: 24px;
+}
+
+.cart {
+  width: 40px;
+  height: 38px;
+  /* border: 1px #f36d00 solid; */
+  font-size: 30px;
+  vertical-align: baseline;
+  padding-top: 8px;
+}
+
+.advertisement {
+  width: 188px;
+}
+
+/* Navigation */
+.nav-bar {
+  background-color: rgb(250, 127, 147);
+}
+
+.menu,
+.sub-menu,
+.sub-sub-menu {
+  width: 200px !important;
+  height: 100%;
+  padding: 8px 0 12px 0;
+  font-size: 13px;
+  color: #757575;
+  text-transform: capitalize;
+  background-color: white;
+  box-shadow: 0px 0px 4px 1px rgb(223, 222, 222);
+}
+
+.menu-text {
+  width: 172px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-icon,
+.sub-menu-icon {
+  color: #f36d00;
+  display: none;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.menu-link,
+.sub-menu-link,
+.sub-sub-menu-link {
+  line-height: 27px;
+  width: 200px;
+  /* height: 100%; */
+  padding: 0 8px;
+  background-color: white;
+}
+
+.sub-menu,
+.sub-sub-menu {
+  display: none;
+  height: 100%;
+}
+
+.menu-link:hover .sub-menu,
+.menu-link:hover .menu-icon,
+.sub-menu-link:hover .sub-menu-icon,
+.sub-menu-link:hover .sub-sub-menu {
+  display: block;
+}
+.menu-link:hover,
+.sub-menu-link:hover,
+.sub-sub-menu-link:hover {
+  background-color: #eff0f5;
+  color: #f36d00;
+}
+
+.meta-nav {
+  padding-top: 12px;
+}
+
+/* Vung meta link */
+.meta-link {
+  width: 288px;
+  border-radius: 20px;
+  padding: 4px;
+  background-color: white;
+  font-weight: 500;
+  vertical-align: baseline;
+}
+.meta-img {
+  height: 38px;
+  width: 38px;
+  /* padding: 0 4px; */
+  border-radius: 50%;
+  border: 1px solid rgb(246, 246, 246);
+}
+
+/* Vung flash sale */
+.flash-sale {
+  padding-top: 40px;
+}
+
+.sale-meta {
+  padding: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid rgb(204, 203, 203);
+}
+.sale-all {
+  margin-left: auto;
+  padding: 8px;
+  border: #f36d00 1px solid;
+  text-transform: uppercase;
+  color: #f36d00;
+}
+
+.sale-title,
+.sale-time span {
+  padding: 8px 0 0 12px;
+  color: #f36d00;
+  font-size: 13px;
+}
+
+.sale-time {
+  margin-left: 65px;
+  width: 230px;
+  /* color: #212121; */
+  /* padding-top: 8px; */
+}
+
+.time-block {
+  width: 150px;
+}
+
+.time-num {
+  height: 36px;
+  width: 40px;
+  background-color: #d3232a;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 0 0 0;
+}
+
+.sale-list {
+  flex-wrap: wrap;
+}
+.sale-item {
+  width: 188px;
+  height: 290px;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.sale-item:hover{
+  box-shadow: 0 2px 4px 0 rgba(0 0 0 /25%);
+  border: 1px solid rgb(218, 218, 218);
+}
+
+.sale-item-name {
+  height: 36px;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.sale-item-info{
+  padding: 4px 8px;
+}
+
+.cost-old{
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.cost-new{
+  color: #f36d00;
+}
+.currency{
+  text-decoration: underline;
+}
+
+.origin-price{
+  color: #9e9e9e;
+  text-decoration: line-through;
+}
+
