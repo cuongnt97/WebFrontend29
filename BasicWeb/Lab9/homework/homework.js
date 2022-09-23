@@ -1,5 +1,14 @@
 //Bai 1
-const usd2vnd = (a) => 23000 * a;
+//Cach 1
+//const usd2vnd = (a) => 23000 * a;
+//Cach 2
+const usd2vnd = function (a) {
+  return 23000 * a;
+};
+//Cach 3
+// function usd2vnd(a) {
+//     return 23000 * a;
+// };
 
 console.log(5 + "$ co gia tri la", usd2vnd(5), "VND");
 
@@ -20,6 +29,10 @@ console.log(24, "do C = ", celsiusToFahrenheit(24), "do F");
 
 //Bai 4
 const pow = (a, b) => a ^ b;
+//Cach nay nghich vui thoi
+// function pow(a, b) {
+//     return Math.pow(a, b);
+// }
 console.log(5 + "^" + 3, "=", pow(5, 3));
 
 //Bai 5
@@ -39,4 +52,4 @@ console.log(
 );
 
 //Bai 6
-   /*...*/
+/*...*/
