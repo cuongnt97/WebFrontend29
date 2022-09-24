@@ -13,6 +13,14 @@ age = 35;
 let email = "hien@techmaster.vn"
 ```
 
+```javascript
+// Khai báo biến
+let number;
+
+// Khai báo biến và khởi tạo giá trị
+let age = 20;
+```
+
 ### Quy tắc đặt tên biến
 
 - Chứa các ký tự chữ, số, \_ và $
@@ -33,5 +41,10 @@ function functionName(para_1, ..., para_n) {
 
 ### Phân biệt tham số (parameter) và đối số (argument)
 
+<<<<<<< HEAD
 - Tham số (parameter) là biến trong khai báo hàm.
 - Đối số (argument) là giá trị thực của biến này được truyền vào hàm.
+=======
+* Tham số (parameter) là biến trong khai báo hàm.
+* Đối số (argument) là giá trị thực của biến này được truyền vào hàm.
+>>>>>>> 58abb769446f24b79fc3b4231003ebd5a77ad37e
