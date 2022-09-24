@@ -11,6 +11,14 @@ age = 35;
 let email = "hien@techmaster.vn"
 ```
 
+```javascript
+// Khai báo biến
+let number;
+
+// Khai báo biến và khởi tạo giá trị
+let age = 20;
+```
+
 ### Quy tắc đặt tên biến
 * Chứa các ký tự chữ, số, _ và $
 * Ký tự đầu tiên không được là số (nên là chữ)
