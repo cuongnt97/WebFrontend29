@@ -4,7 +4,7 @@
 
 ### Khai báo biến dùng `let` / `const` / `var`
 
-```
+```javascript
 // Khai báo biến và không gán giá trị cho biến
 let age;
 age = 35;
@@ -13,27 +13,29 @@ age = 35;
 let email = "hien@techmaster.vn"
 ```
 
-```javascript
-// Khai báo biến
-let number;
-
-// Khai báo biến và khởi tạo giá trị
-let age = 20;
-```
-
 ### Quy tắc đặt tên biến
 
-- Chứa các ký tự chữ, số, \_ và $
-- Ký tự đầu tiên không được là số (nên là chữ)
-- Có phân biệt hoa thường
-- Không trùng với các từ khóa của Javascript như: **for, while, this, …**
-- Nên đặt tên theo kiểu **camelCase** nếu tên biến có độ dài 2 từ trở lên cho dễ đọc. Ví dụ **binhphuong** thì nên đặt là **binhPhuong**.
+* Chứa các ký tự chữ, số, \_ và $
+* Ký tự đầu tiên không được là số (nên là chữ)
+* Có phân biệt hoa thường
+* Không trùng với các từ khóa của Javascript như: **for, while, this, …**
+* Nên đặt tên theo kiểu **camelCase** nếu tên biến có độ dài 2 từ trở lên cho dễ đọc. Ví dụ **binhphuong** thì nên đặt là **binhPhuong**.
+
+### Kiểm tra dữ liệu biến
+
+```javascript
+let number = 10;
+console.log(typeof number); // "number"
+
+let name = "Bùi Hiên";
+console.log(typeof name); // "string"
+```
 
 ## Hàm (function) trong JavaScript
 
-### Định nghĩa function
+### Khai báo function
 
-```
+```javascript
 function functionName(para_1, ..., para_n) {
  // code thực thi function
 }
@@ -41,10 +43,5 @@ function functionName(para_1, ..., para_n) {
 
 ### Phân biệt tham số (parameter) và đối số (argument)
 
-<<<<<<< HEAD
-- Tham số (parameter) là biến trong khai báo hàm.
-- Đối số (argument) là giá trị thực của biến này được truyền vào hàm.
-=======
 * Tham số (parameter) là biến trong khai báo hàm.
 * Đối số (argument) là giá trị thực của biến này được truyền vào hàm.
->>>>>>> 58abb769446f24b79fc3b4231003ebd5a77ad37e
