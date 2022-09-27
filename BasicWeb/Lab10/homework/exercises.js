@@ -144,11 +144,12 @@ function calcGrade(point) {
  * @return {number} Số tiền phải trả
  */
 function calcTaxiFee(km) {
-  if (km <= 30) {
+  if (0 <=km && km <= 30) {
     return 10000 + 11000 * km;
-  } else if(km > 30) {
+  } else if (km > 30) {
     return 10000 + 11000 * 30 + (km - 30) * 9500;
-  } return 'Not valid argument';
+  }
+  return "Not valid argument";
 }
 
 /**
@@ -177,5 +178,5 @@ function solveEquation(a, b, c) {
       (-b - Math.sqrt(delta)) / (2 * a),
     ];
   }
-  return 'Not valid argument';
+  return "Not valid argument";
 }
