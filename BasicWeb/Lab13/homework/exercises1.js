@@ -50,11 +50,11 @@ function todayBirthday(users) {
   let usersToday = [];
   let today = new Date();
   let regex = new RegExp("[0-9]{4}-[0-9]{2}-[0-9]{2}");
-  
+
   for (const user of users) {
-    if(!regex.test(user.dateOfBirth)){
-        console.log('Ngay thang nam khong dung dinh dang khai bao');
-        continue;
+    if (!regex.test(user.dateOfBirth)) {
+      console.log("Ngay thang nam khong dung dinh dang khai bao");
+      continue;
     }
     let dob = new Date(user.dateOfBirth);
     if (
@@ -84,6 +84,4 @@ console.log(todayBirthday(usersTest));
  *
  * @returns {string} Chuỗi biểu thị thời gian đã trôi qua
  */
-function humanize(date) {
-    
-}
+function humanize(date) {}

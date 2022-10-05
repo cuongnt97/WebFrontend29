@@ -223,7 +223,7 @@ function fullname(students) {
   for (const student of students) {
     const studentWithFullname = Object.assign({}, student);
     studentWithFullname.fullname =
-      studentWithFullname.firstname + ' ' + studentWithFullname.lastname;
+      studentWithFullname.firstname + " " + studentWithFullname.lastname;
     newStudents.push(studentWithFullname);
   }
   return newStudents;

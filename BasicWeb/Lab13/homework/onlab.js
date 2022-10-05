@@ -10,12 +10,12 @@
  * @returns {string} Chuỗi viết hoa chữ cái đầu
  */
 function capitalize(str) {
-    let arr = str.trim().split(' ');
-    let newStr = '';
-    for (const value of arr) {
-        newStr += value.charAt(0).toUpperCase() + value.slice(1) + ' ';
-    }
-    return newStr.slice(0, -1);
+  let arr = str.trim().split(" ");
+  let newStr = "";
+  for (const value of arr) {
+    newStr += value.charAt(0).toUpperCase() + value.slice(1) + " ";
+  }
+  return newStr.slice(0, -1);
 }
 
 // console.log(capitalize("  javascript is Fun "));
@@ -32,10 +32,10 @@ function capitalize(str) {
  * @returns {string} Chuỗi viết hoa chữ cái đầu mỗi từ
  */
 function title(str) {
-    str = str.toLowerCase();
-    return capitalize(str);
+  str = str.trim().toLowerCase();
+  return capitalize(str);
 }
-// console.log(title("    javaScript iS fUn     "));
+console.log(title("    javaScript iS fUn     "));
 /**
  * Đếm số ký tự nguyên âm xuất hiện trong chuỗi
  *
@@ -44,14 +44,14 @@ function title(str) {
  * @returns {number} Số ký tự nguyên âm có trong chuỗi
  */
 function countVowel(str) {
-    let count = 0;
-    let lengthStr = str.length;
-    for(let i = 0; i < lengthStr; i++){
-        if(isVowel(str.charAt(i))){
-            count++;
-        }
+  let count = 0;
+  let lengthStr = str.length;
+  for (let i = 0; i < lengthStr; i++) {
+    if (isVowel(str.charAt(i))) {
+      count++;
     }
-    return count;
+  }
+  return count;
 }
 
 // console.log(countVowel('Ten toi la Nguyen Tan Cuong'));
@@ -78,12 +78,12 @@ function isVowel(character) {
  * @return {string} Màu ngẫu nhiên
  */
 function randomColor() {
-    let lenStr = 6;
-    let randomStr = '';
-    for (let i = 0; i < lenStr; i++) {
-        randomStr += Math.floor(Math.random() * 16).toString(16);
-    }
-    return randomStr;
+  let lenStr = 6;
+  let randomStr = "";
+  for (let i = 0; i < lenStr; i++) {
+    randomStr += Math.floor(Math.random() * 16).toString(16);
+  }
+  return randomStr;
 }
 
 // console.log(randomColor());
@@ -98,14 +98,14 @@ function randomColor() {
  * @returns {string} Chuỗi đảo ngược
  */
 function reverseWords(str) {
-    let arr = str.trim().split(' ');
-    let lenArr = arr.length;
-    for(let i = 0; i < lenArr/2; i++){
-        let temp = arr[i];
-        arr[i] = arr[lenArr - 1 -i];
-        arr[lenArr - i - 1] = temp;
-    }
-    return arr.join(' ');
+  let arr = str.trim().split(" ");
+  let lenArr = arr.length;
+  for (let i = 0; i < lenArr / 2; i++) {
+    let temp = arr[i];
+    arr[i] = arr[lenArr - 1 - i];
+    arr[lenArr - i - 1] = temp;
+  }
+  return arr.join(" ");
 }
 // console.log(reverseWords("The fox is comming for the chicken "));
 
@@ -118,7 +118,7 @@ function reverseWords(str) {
  * @returns {string} Chuỗi URL
  */
 function parameterize(str) {
-    return str.toLowerCase().trim().replaceAll(' ', '-')
+  return str.toLowerCase().trim().replaceAll(" ", "-");
 }
 
 // console.log(parameterize("JavaScript is fun"));
