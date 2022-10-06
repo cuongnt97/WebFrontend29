@@ -84,4 +84,32 @@ console.log(todayBirthday(usersTest));
  *
  * @returns {string} Chuỗi biểu thị thời gian đã trôi qua
  */
-function humanize(date) {}
+function humanize(date) {
+    const now = new Date();
+    let value = (now - date) / 1000;//theo giay
+    if (value < 5) {
+        return 'Vua xong';
+    } else if (value / 60 < 1) {
+        return Math.floor(value) + ' giay truoc';
+    } else if (value / (60 * 60) < 1) {
+        return Math.floor(value / 60) + ' phut truoc';
+    } else if (value / (60 * 60 * 24) < 1) {
+        return Math.floor(value / (60 * 60)) + ' gio truoc';
+    } else if (value / (60 * 60 * 24 * 31) < 1) {
+        let month = now.getMonth() + 1;
+        switch (month - 1) {
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                return Math.floor(value / (60 * 60 * 24)) + ' ngay truoc';
+            case 2: case 4: case 6: case 9: case 11:
+                return '1 thang truoc';
+
+        }
+    } else if (value / (366 * 60 * 60 * 24) < 1) {
+        if ((value / (365 * 60 * 60 * 24) > 1)) {
+            return 'Ngay xua ngay xua';
+        } else {
+            return Math.floor(value / (60 * 60 * 24 * 31)) + ' thang truoc';
+        }
+    }
+    return 'Ngay xua ngay xua';
+}
