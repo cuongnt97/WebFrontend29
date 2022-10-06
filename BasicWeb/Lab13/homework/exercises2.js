@@ -159,20 +159,46 @@ arr1 = [1, 2, 3, 4, 6, 7, 7, 5, 7, 5, 3, 23];
  *
  * @return {number} Số lớn thứ 2 trong mảng
  */
-function secondLargest(arr) {
-  let maxValue = max(arr);
-  let newArr = removeDuplicate(arr);
+// function secondLargest(arr) {
+//   let maxValue = max(arr);
+//   let newArr = removeDuplicate(arr);
 
-  for (let i = 0; i < newArr.length; i++) {
-    if (newArr[i] === maxValue) {
-      let temp = newArr[newArr.length - 1];
-      newArr[newArr.length - 1] = newArr[i];
-      newArr[i] = temp;
+//   for (let i = 0; i < newArr.length; i++) {
+//     if (newArr[i] === maxValue) {
+//       let temp = newArr[newArr.length - 1];
+//       newArr[newArr.length - 1] = newArr[i];
+//       newArr[i] = temp;
+//     }
+//   }
+//   newArr.pop();
+//   return max(newArr);
+// }
+
+function secondLargest(arr) {
+  arr = bubbleSort(arr);
+  let len = arr.length;
+  for(let i = len - 1; i >= 1; i--) {
+    if(arr[i] > arr[i-1]){
+      return arr[i-1];
     }
   }
-  newArr.pop();
-  return max(newArr);
 }
+
+function bubbleSort(array) {
+  let len = array.length;
+  for (let i = 0; i < len; i++) {
+    for (let x = 0; x < len - 1 - i; x++) {
+      if (array[x] > array[x + 1]) {
+        [array[x], array[x + 1]] = [array[x + 1], array[x]];
+      }
+    }
+  }
+  return array;
+};
+
+
+
+// console.log(secondLargest([1,2,5,4,6,8,4,8,9,4,9]));
 
 /**
  * Xáo trộn vị trí các phần tử trong một mảng
