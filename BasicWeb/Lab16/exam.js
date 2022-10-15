@@ -458,7 +458,7 @@ function minNumber(x) {
   }
   //Neu x< 10 return x
   let xStr = String(x);
-  if (x < 10 && xStr.length == 1) return x;
+  if (x < 10) return x;
   //Chuyen so ve string va map lai thanh mang gia tri so va sort mang
   let arrNum = xStr
     .split("")
@@ -478,4 +478,4 @@ function minNumber(x) {
   return Number(arrNum.join(""));
 }
 
-// console.log(minNumber(50000000010));
+console.log(minNumber(500000000010));
