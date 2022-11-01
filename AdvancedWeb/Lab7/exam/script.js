@@ -8,46 +8,47 @@
  * 6. Link dinh kem
  */
 
-// const listCourses = [
-//   {
-//     id: 1,
-//     title: "Lớp học Thiết kế - Lập trình cơ sở dữ liệu",
-//     form: "lab",
-//     count: 4,
-//     price: 2500000,
-//     image: "https://media.techmaster.vn/api/static/36/bu7vt2451co5836g4l70",
-//     link: "/course-detail/25608/thiet-ke-lap-trinh-co-so-du-lieu",
-//   },
-//   {
-//     id: 2,
-//     title: "Lớp học Thiết kế - Lập trình cơ sở dữ liệu",
-//     form: "online",
-//     count: 2,
-//     price: 1800000,
-//     image: "https://media.techmaster.vn/api/static/36/bu7vt2451co5836g4l70",
-//     link: "/course-detail/25608/thiet-ke-lap-trinh-co-so-du-lieu",
-//   },
-//   {
-//     id: 3,
-//     title: "Lớp học Thiết kế - Lập trình cơ sở dữ liệu",
-//     form: "online",
-//     count: 5,
-//     price: 2000000,
-//     image: "https://media.techmaster.vn/api/static/36/bu7vt2451co5836g4l70",
-//     link: "/course-detail/25608/thiet-ke-lap-trinh-co-so-du-lieu",
-//   },
-//   {
-//     id: 4,
-//     title: "Lớp học Thiết kế - Lập trình cơ sở dữ liệu",
-//     form: "lab",
-//     count: 1,
-//     price: 1200000,
-//     image: "https://media.techmaster.vn/api/static/36/bu7vt2451co5836g4l70",
-//     link: "/course-detail/25608/thiet-ke-lap-trinh-co-so-du-lieu",
-//   },
-// ];
+const listcourses = [
+  {
+    id: 1,
+    title: "Lớp học Thiết kế - Lập trình cơ sở dữ liệu",
+    form: "lab",
+    count: 4,
+    price: 2500000,
+    image: "https://media.techmaster.vn/api/static/36/bu7vt2451co5836g4l70",
+    link: "/course-detail/25608/thiet-ke-lap-trinh-co-so-du-lieu",
+  },
+  {
+    id: 2,
+    title: "Lớp học Thiết kế - Lập trình cơ sở dữ liệu",
+    form: "online",
+    count: 2,
+    price: 1800000,
+    image: "https://media.techmaster.vn/api/static/36/bu7vt2451co5836g4l70",
+    link: "/course-detail/25608/thiet-ke-lap-trinh-co-so-du-lieu",
+  },
+  {
+    id: 3,
+    title: "Lớp học Thiết kế - Lập trình cơ sở dữ liệu",
+    form: "online",
+    count: 5,
+    price: 2000000,
+    image: "https://media.techmaster.vn/api/static/36/bu7vt2451co5836g4l70",
+    link: "/course-detail/25608/thiet-ke-lap-trinh-co-so-du-lieu",
+  },
+  {
+    id: 4,
+    title: "Lớp học Thiết kế - Lập trình cơ sở dữ liệu",
+    form: "lab",
+    count: 1,
+    price: 1200000,
+    image: "https://media.techmaster.vn/api/static/36/bu7vt2451co5836g4l70",
+    link: "/course-detail/25608/thiet-ke-lap-trinh-co-so-du-lieu",
+  },
+];
 
 const listCourses = JSON.parse(localStorage.getItem("courses")) || [];
+
 
 const cartItems = document.querySelector(".cart-item");
 const totalPrice = document.querySelector(".total-price");
@@ -97,10 +98,9 @@ const createCartItemAmount = (course) => {
   const cartItemAmount = createElClasslist("div", "cart-item-amount");
   const btnDown = createButtonCount("btn-down");
   const btnUp = createButtonCount("btn-up");
-  let count = course.count;
   btnDown.onclick = function () {
     course.count--;
-    if (count == 0) {
+    if (course.count == 0) {
       btnDown.disabled = true;
     }
     spanPrice.innerText = ` ${course.count} `;
@@ -171,20 +171,6 @@ const createBtnDelete = (course, courses) => {
     removeEl(course, courses);
     save(courses);
   };
-
-  /**
-   * function deleteProduct(id, el) {
-  if (confirm("Xóa sản phẩm")) {
-    const index = products.findIndex(function (product) {
-      return product.id === id;
-    });
-
-    products.splice(index, 1);
-    el.remove();
-    save();
-  }
-}
-   */
   return btn;
 };
 
